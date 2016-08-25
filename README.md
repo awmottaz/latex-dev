@@ -16,6 +16,8 @@ Copy `mathhw.cls` to your local `texmf` directory and run the following command 
 
     texhash
 
+For more detailed instructions, look [here](http://tex.stackexchange.com/questions/96976/install-custom-cls-using-tex-live-in-local-directory)
+
 ### Packages
 The following is a list if packages included in `mathhw.cls`.
 
