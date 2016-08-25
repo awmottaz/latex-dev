@@ -110,5 +110,53 @@ The default paper size for this document is **letter**. The layout for the page 
 	marginparwidth=0.18\paperwidth
 }
 ```
-You will notice that all of the sizes are set relative to either the font size or paper dimensions. This is an intentional design choice so that the layout will look the same regardless of paper size or font selection.
 ![page layout](mathhw/mathhw-page-layout.png  "Page Layout")
+You will notice that all of the sizes are set relative to either the font size or paper dimensions. This is an intentional design choice so that the layout will look the same regardless of paper size or font selection. As noted in the discussion on [this StackExchange question](http://tex.stackexchange.com/questions/71172/why-are-default-latex-margins-so-big), the default margins in the article class are large so that the width of the text block is not too large. This helps the reader [comfortably read](http://baymard.com/blog/line-length-readability) the text without losing track of the line they are on. At the default 10 point font size, the number of characters per line should be at around 70 and never exceed 80.
+
+I take some inspiration from a [Tufte-style book](http://www.latextemplates.com/templates/books/1/book_1_documentation.pdf) to move the body off-center to allow for a usable space for margin notes. The body height is slightly enlarged than the default so that more content can fit on a page without looking squeezed in.
+
+### Tikz Libraries
+Currently, `tikz` is loaded with the `shapes` and `arrows` libraries.
+
+### Hyperlinks
+The `hyperref` package is setup as such:
+```tex
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	linkbordercolor=white,
+	urlcolor=blue,
+	unicode
+}
+```
+
+### Math Macros
+The following tables show the custom defined macros for accessing common math symbols and operators.
+
+#### Double Stroke Characters
+![double stroke characters](mathhw/double-stroke.png "Double Stroke")
+
+#### Functions and Operators
+![functions and operators](mathhw/operators.png "Functions and Operators")
+
+### Theorem-like Environments
+Several theorem-like environments have been defined.
+
+- **Theorem**: `\begin{thm}`, or for enumerated versions: `\begin{nthm}`
+- **Lemma**: `\begin{lem}`, or for enumerated versions: `\begin{nlem}`
+- **Proposition**: `\begin{prop}`, or for enumerated versions: `\begin{nprop}`
+- **Corollary**: `\begin{cor}`, or for enumerated versions: `\begin{nlem}`
+- **Definition**: `\begin{defn}`
+- **Example**: `\begin{exmp}`
+- **Solution**: `\begin{sol}`
+- **Case**: `\begin{case}`
+- **Note**: `\begin{note}`
+- **Claim**: `\begin{claim}`
+
+### Other Features
+
+#### Circled text
+I have included a command, `\circled{}`, which will place a nice circle/oval around the text in its argument.
+
+#### Margin paragraphs
+I have included a command, `\mpar{}`, which will format its argument as a margin note with small text size. I find that this smaller text is easier to read since it reduces the number of hyphenations and one-word lines.
