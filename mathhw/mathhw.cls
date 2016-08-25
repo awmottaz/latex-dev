@@ -47,6 +47,7 @@
 \RequirePackage{microtype}
 \RequirePackage{multicol}
 \RequirePackage{tikz-cd}
+\RequirePackage{perpage}
 %
 %% Declare class options
 \DeclareOption{fdefn}{ % put frames around definitions
@@ -131,19 +132,18 @@
 	}%   
 }   
 \makeatother%
-\newcommand*{\myfnsymbol}[1]{%
-	\myfnsymbolsingle{\value{#1}}%
-}
 \newalphalph{\myfnsymbolmult}[mult]{\myfnsymbolsingle}{}%
 \renewcommand*{\thefootnote}{%
 	\myfnsymbolmult{\value{footnote}}%
 }
-%
+% This resets the footnote counter to 1 on each page
+\MakePerPage{footnote}
 % footnote references
 \crefformat{footnote}{#2\footnotemark[#1]#3}%
 %
 % I want math inside of \textbf{•} to also be bolded font
 \DeclareTextFontCommand{\textbf}{\boldmath\bfseries}
+%
 % Here I redefine the proof environment so that if fewer than 4 lines will
 % show at the bottom of a page, then the entire environment will be pushed
 % onto the next page.
@@ -152,6 +152,7 @@
 \renewenvironment{proof}[1][\proofname]{%
 	\Needspace*{4\baselineskip} \oldproof[#1]}
 	{\oldendproof}
+%
 %
 %% Math macros
 %----- DOUBLE STROKE CHARACTERS -----%
