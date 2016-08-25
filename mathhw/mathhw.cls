@@ -29,7 +29,7 @@
 \RequirePackage{tikz}
 \RequirePackage{pgfplots}
 \RequirePackage{needspace}
-\RequirePackage[textwidth = 0.9\marginparwidth]{todonotes}
+\RequirePackage[textwidth=0.9\marginparwidth]{todonotes}
 \RequirePackage{fancyhdr}
 \RequirePackage[parfill]{parskip}
 \RequirePackage{hyperref}
