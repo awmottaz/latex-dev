@@ -111,4 +111,4 @@ The default paper size for this document is **letter**. The layout for the page 
 }
 ```
 You will notice that all of the sizes are set relative to either the font size or paper dimensions. This is an intentional design choice so that the layout will look the same regardless of paper size or font selection.
-![page layout](/home/tony/Documents/latex-dev/mathhw/mathhw-page-layout.png  "Page Layout")
+![page layout](mathhw/mathhw-page-layout.png  "Page Layout")
