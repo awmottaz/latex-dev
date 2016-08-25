@@ -309,7 +309,7 @@
 %% Customize the header
 \newcommand{\cn}{<Course Title>}
 \newcommand{\as}{<Assignment Title>}
-\newcommand{\nm}{Tony Mottaz} % <== REPLACE WITH YOUR NAME
+\newcommand{\nm}{<First Last>} % <== REPLACE WITH YOUR NAME
 \newcommand{\coursetitle}[1]{\renewcommand{\cn}{#1}}
 \newcommand{\hwtitle}[1]{\renewcommand{\as}{#1}}
 \newcommand{\myname}[1]{\renewcommand{\nm}{#1}}
