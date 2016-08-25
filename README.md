@@ -29,6 +29,11 @@ To use this document class, simply start your LaTeX document with
 ```
 The list of available options is provided below.
 
+To save yourself from using the `\myname{}` command in every document, you can edit the `mathhw.cls` you copied to your system. Look for the line
+```tex
+\newcommand{\nm}{<First Last>} % <== REPLACE WITH YOUR NAME
+```
+
 ### Packages
 The following is a list if packages included in `mathhw.cls`.
 
@@ -91,3 +96,19 @@ By default, math input is not bolded, even when inside a `\textbf{}` command. I 
 
 #### Consolidated Proofs
 If fewer than four lines of a proof can fit onto the bottom of a page, then the beginning of the proof will be pushed onto the next page.
+
+### Page Layout
+The default paper size for this document is **letter**. The layout for the page is set using the `geometry` package:
+```tex
+\geometry{
+	headheight = 1.3em,
+	headsep = 1.3em,
+	marginparsep = 1.5em,
+	footnotesep = 3em,
+	hdivide={0.15\paperwidth,0.62\paperwidth,*},
+	vdivide={0.1\paperheight,0.78\paperheight,*},
+	marginparwidth=0.18\paperwidth
+}
+```
+You will notice that all of the sizes are set relative to either the font size or paper dimensions. This is an intentional design choice so that the layout will look the same regardless of paper size or font selection.
+![page layout](/home/tony/Documents/latex-dev/mathhw/mathhw-page-layout.png  "Page Layout")
