@@ -1,8 +1,12 @@
-%% This is the mathhw class for writing mathematics homework solutions.
+%% This is the mathhw document class for writing mathematics homework solutions.
+%
+% LICENSE: This project is released under the LaTeX Project Public License, v1.3c or later. See
+%
+%                          http://www.latex-project.org/lppl.txt
 %
 %% Initialization
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mathhw}[2016/08/24 Math Homework]
+\ProvidesClass{mathhw}[2016/08/24 v0.01 Math Homework Document Class]
 %
 %% Load the article class and pull in the packages
 \LoadClass[letterpaper]{article}
