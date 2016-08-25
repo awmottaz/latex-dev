@@ -13,10 +13,21 @@ Copy `mathhw.cls` to your local `texmf` directory and run "Refresh FNDB" in MiKT
 
 #### TeX Live
 Copy `mathhw.cls` to your local `texmf` directory and run the following command in your command prompt/terminal as the super user:
-
-    texhash
+```bash
+texhash
+```
 
 For more detailed instructions, look [here](http://tex.stackexchange.com/questions/96976/install-custom-cls-using-tex-live-in-local-directory).
+
+### Usage
+To use this document class, simply start your LaTeX document with
+```tex
+\documentclass[<options>]{mathhw}
+\myname{<Firstname Lastname>}
+\coursetitle{<Name of course>}
+\hwtitle{<Name of homework>}
+```
+The list of available options is provided below.
 
 ### Packages
 The following is a list if packages included in `mathhw.cls`.
@@ -58,3 +69,25 @@ The following is a list if packages included in `mathhw.cls`.
 - [`microtype`](http://www.ctan.org/pkg/microtype)
 - [`multicol`](http://www.ctan.org/pkg/multicol)
 - [`tikz-cd`](http://www.ctan.org/pkg/tikz-cd)
+- [`perpage`](http://www.ctan.org/pkg/perpage)
+
+### Class Options
+#### fdefn
+This option puts frames around the definitions
+#### fthm
+This option puts frames around the theorems
+#### fnthm
+This option puts frames around the enumerated theorems
+#### darktheme
+This option inverts the colors of the page, making the background black and the text white. This can be nice while editing to reduce eye strain.
+
+### Behavior
+
+#### Footnote Symbols
+By default, whenever one uses the `\footnote{}` command, LaTeX automatically inserts a superscripted number as a reference to the footnote placed on the page. Since the intended use of this document class is writing mathematics, these numbers could cause confusion, as they look like exponents. To aleviate this potential confusion, the footnote numbers have been replaced by symbols that are rarely seen in mathematics.
+
+#### Bold Math
+By default, math input is not bolded, even when inside a `\textbf{}` command. I have overridden this behavior so that everything inside `\textbf{}` is bold.
+
+#### Consolidated Proofs
+If fewer than four lines of a proof can fit onto the bottom of a page, then the beginning of the proof will be pushed onto the next page.
