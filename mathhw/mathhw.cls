@@ -112,6 +112,7 @@
 	urlcolor=blue,
 	unicode
 }
+\setlist{noitemsep}
 %% Customizations of behavior
 % Footnote symbols
 \makeatletter%
