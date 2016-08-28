@@ -111,6 +111,7 @@ The default paper size for this document is **letter**. The layout for the page 
 }
 ```
 ![page layout](mathhw/mathhw-page-layout.png  "Page Layout")
+
 You will notice that all of the sizes are set relative to either the font size or paper dimensions. This is an intentional design choice so that the layout will look the same regardless of paper size or font selection. As noted in the discussion on [this StackExchange question](http://tex.stackexchange.com/questions/71172/why-are-default-latex-margins-so-big), the default margins in the article class are large so that the width of the text block is not too large. This helps the reader [comfortably read](http://baymard.com/blog/line-length-readability) the text without losing track of the line they are on. At the default 10 point font size, the number of characters per line should be at around 70 and never exceed 80.
 
 I take some inspiration from a [Tufte-style book](http://www.latextemplates.com/templates/books/1/book_1_documentation.pdf) to move the body off-center to allow for a usable space for margin notes. The body height is slightly enlarged than the default so that more content can fit on a page without looking squeezed in.
