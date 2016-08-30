@@ -134,7 +134,7 @@ The `hyperref` package is setup as such:
 ### List Environment Spacing
 This class sets
 ```tex
-\setlist{noitem}
+\setlist{noitemsep}
 ```
 from the [`enumitem`](http://www.ctan.org/pkg/enumitem) package. This removes the extra spacing in list environments (e.g. `enumerate`, `itemize`) that is usually there by default.
 
