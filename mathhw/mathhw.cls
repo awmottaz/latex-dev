@@ -6,7 +6,7 @@
 %
 %% Initialization
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mathhw}[2016/08/24 v0.01 Math Homework Document Class]
+\ProvidesClass{mathhw}[2016/08/31 v0.03 Math Homework Document Class]
 %
 %% Load the article class and pull in the packages
 \LoadClass[letterpaper]{article}
@@ -48,6 +48,7 @@
 \RequirePackage{multicol}
 \RequirePackage{tikz-cd}
 \RequirePackage{perpage}
+\RequirePackage{listings}
 %
 %% Declare class options
 \DeclareOption{fdefn}{ % put frames around definitions
@@ -113,6 +114,14 @@
 	unicode
 }
 \setlist{noitemsep}
+\lstset{
+	basicstyle = \ttfamily,
+	showstringspaces = false,
+	numbers = left,
+	numberstyle = \tiny,
+	numbersep = 5pt,
+	frame = single
+}
 %% Customizations of behavior
 % Footnote symbols
 \makeatletter%

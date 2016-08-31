@@ -1,7 +1,7 @@
 # latex-dev
 A repository of LaTeX development
 
-## Homework Document Class (v0.01)
+## Homework Document Class (v0.03)
 The Homework document class, `mathhw.cls`, is designed with the graduate student in mind. LaTeX has a sharp learning curve, and although I believe any serious mathematicians today must develop a working knowledge of LaTeX, I also believe it should be easy for someone to get up and running creating beautifully typeset homework. 
 
 This document class provides a comprehensive collection of mathematics packages and macros. It also applies the best practices regarding typography (see [here](http://tex.stackexchange.com/questions/71172/why-are-default-latex-margins-so-big) for some discussion on the matter). There are many other features, tweaks, and design choices contained within to help make this document class as useful and user-friendly as possible. Read below for detailed information.
@@ -75,6 +75,7 @@ The following is a list if packages included in `mathhw.cls`.
 - [`multicol`](http://www.ctan.org/pkg/multicol)
 - [`tikz-cd`](http://www.ctan.org/pkg/tikz-cd)
 - [`perpage`](http://www.ctan.org/pkg/perpage)
+- [`listings`](http://www.ctan.org/pkg/listings)
 
 ### Class Options
 #### fdefn
@@ -160,6 +161,22 @@ Several theorem-like environments have been defined.
 - **Case**: `\begin{case}`
 - **Note**: `\begin{note}`
 - **Claim**: `\begin{claim}`
+
+### Code Listings
+
+The `listings` package is loaded for typesetting code listings. The `mathhw` class uses the following configuration:
+```tex
+\lstset{
+	basicstyle = \ttfamily,
+	showstringspaces = false,
+	numbers = left,
+	numberstyle = \tiny,
+	numbersep = 5pt,
+	frame = single
+}
+```
+
+You can adjust or override this configuration using your own `\lstset`.
 
 ### Other Features
 
