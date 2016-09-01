@@ -1,7 +1,7 @@
 # latex-dev
 A repository of LaTeX development
 
-## Homework Document Class (v0.03)
+## Homework Document Class (v0.04)
 The Homework document class, `mathhw.cls`, is designed with the graduate student in mind. LaTeX has a sharp learning curve, and although I believe any serious mathematicians today must develop a working knowledge of LaTeX, I also believe it should be easy for someone to get up and running creating beautifully typeset homework. 
 
 This document class provides a comprehensive collection of mathematics packages and macros. It also applies the best practices regarding typography (see [here](http://tex.stackexchange.com/questions/71172/why-are-default-latex-margins-so-big) for some discussion on the matter). There are many other features, tweaks, and design choices contained within to help make this document class as useful and user-friendly as possible. Read below for detailed information.
@@ -131,13 +131,6 @@ The `hyperref` package is setup as such:
 	unicode
 }
 ```
-
-### List Environment Spacing
-This class sets
-```tex
-\setlist{noitemsep}
-```
-from the [`enumitem`](http://www.ctan.org/pkg/enumitem) package. This removes the extra spacing in list environments (e.g. `enumerate`, `itemize`) that is usually there by default.
 
 ### Math Macros
 The following tables show the custom defined macros for accessing common math symbols and operators.

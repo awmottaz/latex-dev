@@ -6,7 +6,7 @@
 %
 %% Initialization
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mathhw}[2016/08/31 v0.03 Math Homework Document Class]
+\ProvidesClass{mathhw}[2016/09/01 v0.04 Math Homework Document Class]
 %
 %% Load the article class and pull in the packages
 \LoadClass[letterpaper]{article}
@@ -113,7 +113,6 @@
 	urlcolor=blue,
 	unicode
 }
-\setlist{noitemsep}
 \lstset{
 	basicstyle = \ttfamily,
 	showstringspaces = false,
