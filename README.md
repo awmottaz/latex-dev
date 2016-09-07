@@ -1,7 +1,7 @@
 # latex-dev
 A repository of LaTeX development
 
-## Homework Document Class (v0.04)
+## Homework Document Class (v0.05)
 The Homework document class, `mathhw.cls`, is designed with the graduate student in mind. LaTeX has a sharp learning curve, and although I believe any serious mathematicians today must develop a working knowledge of LaTeX, I also believe it should be easy for someone to get up and running creating beautifully typeset homework. 
 
 This document class provides a comprehensive collection of mathematics packages and macros. It also applies the best practices regarding typography (see [here](http://tex.stackexchange.com/questions/71172/why-are-default-latex-margins-so-big) for some discussion on the matter). There are many other features, tweaks, and design choices contained within to help make this document class as useful and user-friendly as possible. Read below for detailed information.
@@ -76,6 +76,7 @@ The following is a list if packages included in `mathhw.cls`.
 - [`tikz-cd`](http://www.ctan.org/pkg/tikz-cd)
 - [`perpage`](http://www.ctan.org/pkg/perpage)
 - [`listings`](http://www.ctan.org/pkg/listings)
+- [`minted`](http://www.ctan.org/pkg/minted)
 
 ### Class Options
 #### fdefn
@@ -170,6 +171,8 @@ The `listings` package is loaded for typesetting code listings. The `mathhw` cla
 ```
 
 You can adjust or override this configuration using your own `\lstset`.
+
+You may wish to instead use the `minted` package for typesetting code listings. In my opinion, this package gives more flexibility and creates prettier code listings. However, due to its dependency on external software and its sensitivity to build commands, its inclusion in this class file is commented out. For a quick start in using `minted`, refer to `MINTED.md`.
 
 ### Other Features
 
