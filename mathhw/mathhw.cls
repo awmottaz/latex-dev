@@ -6,7 +6,7 @@
 %
 %% Initialization
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mathhw}[2016/09/01 v0.04 Math Homework Document Class]
+\ProvidesClass{mathhw}[2016/09/07 v0.05 Math Homework Document Class]
 %
 %% Load the article class and pull in the packages
 \LoadClass[letterpaper]{article}
@@ -49,6 +49,7 @@
 \RequirePackage{tikz-cd}
 \RequirePackage{perpage}
 \RequirePackage{listings}
+%\RequirePackage[outputdir=build]{minted}
 %
 %% Declare class options
 \DeclareOption{fdefn}{ % put frames around definitions
