@@ -49,6 +49,7 @@
 \RequirePackage{tikz-cd}
 \RequirePackage{perpage}
 \RequirePackage{listings}
+\RequirePackage{titlesec}
 %\RequirePackage[outputdir=build]{minted}
 %
 %% Declare class options
