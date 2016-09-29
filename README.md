@@ -1,5 +1,5 @@
-# latex-dev
+# WARNING!
 
-A repository of LaTeX development
+## THIS REPOSITORY WILL BE DELETED. EACH PROJECT WILL BE CONTAINED IN ITS OWN REPOSITORY.
 
-This repo contains several projects. Please refer to the [wiki](https://github.com/awmottaz/latex-dev/wiki).
+### [New `mathhw` repo](https://github.com/awmottaz/mathhw)
